@@ -4,6 +4,7 @@
 :root{
     --dark-primary: #1b1f24;
     --primary: #12bdff;
+    --primary-hover:#0c8ec2;
 }
 
 *{
@@ -34,20 +35,20 @@ header .logo{
     letter-spacing: 2px;
 }
 
-ul{
+header ul{
     list-style: none;
     display: flex;
 }
-
-ul li{
+header ul li{
     margin-right: 20px;
 }
 
-ul li a{
+header li a{
     color: #fff;
     text-decoration: none;
+    font-weight: 600;
 }
-ul li a:hover{
+header li a:hover{
     color: var(--primary);
     transition: 0.7s;
     -webkit-transition: 0.7s;
@@ -56,10 +57,81 @@ ul li a:hover{
     -o-transition: 0.7s;
 }
 
-/* header btn*/
-header button{
+
+
+
+/*Section : hero Homepage*/
+
+section.hero-section{
+    background-color: var(--dark-primary);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 20px 120px 0 200px;
+}
+
+.hero-section__title{
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.hero-section__desc{
+    color: #c4c4c4;
+    font-size: 14px;
+}
+
+.social-icons{
+    margin: 20px 0;
+    display: flex;
+}
+
+.social-icons li{
+margin-right: 15px;
+list-style: none;
+}
+
+.social-icons a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.social-icons li a>i.fa-facebook:hover{
+    color: #1877f2;
+}
+.social-icons li a>i.fa-linkedin:hover{
+    color:  #0077b5;
+}
+.social-icons li a>i.fa-instagram:hover{
+    color:  #feda75;
+}
+.social-icons li a>i.fa-twitter:hover{
+    color:  #1DA1F2;
+}
+
+.hero-buttons button{
+     margin-right: 10px;
+}
+
+/* buttons */
+.btn{
     padding: 10px 20px;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn.btn-primary{
+    background-color: var(--primary);
     font-weight: 600;
+    color: var(--dark-primary);
+    border-radius: 4px;
+}
+
+.btn.btn-primary:hover{
+    background-color: var(--primary-hover);
+}
+
+.btn-dark-outline{
     background-color: var(--dark-primary);
     border: 1px solid var(--primary);
     color: var(--primary);
@@ -68,9 +140,11 @@ header button{
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+    font-weight: 600;
+   
 }
 
-header button:hover{
+.btn-dark-outline:hover{
     cursor: pointer;
     background-color: var(--primary);
     color: #fff;
@@ -79,4 +153,5 @@ header button:hover{
     -moz-transition: 0.2s;
     -ms-transition: 0.2s;
     -o-transition: 0.2s;
+    box-shadow: 1px 2px 6px var(--primary-hover);
 }
