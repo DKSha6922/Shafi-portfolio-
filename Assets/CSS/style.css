@@ -76,6 +76,10 @@ section.hero-section {
     padding: 20px 120px 0 200px;
 }
 
+.hero-section img{
+    padding-top: 30px;
+}
+
 .hero-section__title {
     font-size: 48px;
     font-weight: bold;
